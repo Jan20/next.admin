@@ -1,0 +1,51 @@
+// below defines your custom color to build a theme palette from
+$mat-white: (
+    50: white,
+    100: #ffcdd2,
+    200: #ef9a9a,
+    300: #e57373,
+    400: #ef5350,
+    500: rgb(50, 50, 50),
+    600: #e53935,
+    700: #d32f2f,
+    800: #c62828,
+    900: #b71c1c,
+    A100: #ff8a80,
+    A200: #ff5252,
+    A400: #ff1744,
+    A700: #d50000,
+    contrast: (
+      50: rgb(50, 50, 50),
+      100: rgb(50, 50, 50),
+      200: rgb(50, 50, 50),
+      300: rgb(50, 50, 50),
+      400: rgb(50, 50, 50),
+      500: rgb(50, 50, 50),
+      600: rgb(50, 50, 50),
+      700: rgb(50, 50, 50),
+      800: rgb(50, 50, 50),
+      900: rgb(50, 50, 50),
+      A100: rgb(50, 50, 50),
+      A200: rgb(50, 50, 50),
+      A400: rgb(50, 50, 50),
+      A700: rgb(50, 50, 50),
+    )
+);
+// below creates a primary palette with three shades of blue
+// $my-primary: mat-palette($my-blue, 100, 50, 200);
+
+@import '~@angular/material/theming';
+@include mat-core();
+
+$flow-app-primary: mat-palette($mat-white, 500);
+$flow-app-accent:  mat-palette($mat-blue, 500);
+$flow-app-warn:    mat-palette($mat-white, 50);
+
+$flow-app-theme: mat-light-theme($flow-app-primary, $flow-app-accent, $flow-app-warn);
+
+@include angular-material-theme($flow-app-theme);
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);

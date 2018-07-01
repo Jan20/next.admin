@@ -1,0 +1,34 @@
+<h1 class='title' *ngIf='marketService.inAddMode === true'>
+
+  {{title}}
+
+</h1>
+
+<div class='card-container' *ngIf='marketService.inAddMode === true'>
+  
+  <form class='form'>
+    
+    <mat-form-field class='full-width'>
+      <input  matInput placeholder='Market Name' [formControl]='nameFormControl'>
+    </mat-form-field>
+    
+    <mat-form-field class='full-width'>
+      <input  matInput placeholder='Market Id' [formControl]='idFormControl'>
+    </mat-form-field>
+    
+    <mat-form-field class='full-width'>
+      <input  matInput placeholder='category' [formControl]='categoryFormControl'>
+    </mat-form-field>
+  
+  </form>
+
+  <div class='wrapper'>
+    <button class='control-button submit-button' mat-raised-button (click)='addMarket()' >
+      <mat-icon>done</mat-icon>
+    </button>    
+    <button class='control-button cancel-button' mat-raised-button (click)='marketService.setInAddMode(false)' >
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
+</div>

@@ -1,0 +1,15 @@
+<h1 class='title'>
+  {{asset.name}} {{asset.symbol}}
+</h1>
+
+<div class='card-container'>
+  <button mat-raised-button class='card'> 
+  
+      <h1 class='market-name'>Prediction</h1>
+      <h1 class='market-name'>{{asset.longTermSharpeRatio | number:'1.0'}}</h1>
+  
+  </button>
+</div>
+
+<app-asset-graph></app-asset-graph>
+<app-particles></app-particles>

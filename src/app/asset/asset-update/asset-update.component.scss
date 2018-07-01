@@ -1,0 +1,33 @@
+@import '../../shared/styles/generic-style.scss';
+
+.card-container {
+
+    height: calc(62% - 100px);
+    width: calc(80% - 100px);
+    margin-left: 10%;
+    margin-top: 190px;
+    position: absolute;
+    overflow: scroll;
+    border: 1px solid rgb(238, 238, 238);
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.2);
+
+}
+
+.submit-button {
+
+    background: linear-gradient(to right bottom, rgb(120, 207, 85),rgb(55, 141, 55));
+
+}
+
+.cancel-button {
+
+    background: linear-gradient(to right bottom, rgb(235, 78, 30),rgb(233, 76, 37));
+
+}
+
+.wrapper {
+
+    float: right;
+
+}

@@ -1,0 +1,32 @@
+@import '../../shared/styles/generic-style.scss';
+
+.wrapper {
+
+    float: right;
+
+}
+
+.submit-button {
+
+    background: linear-gradient(to right bottom, rgb(120, 207, 85),rgb(55, 141, 55));
+    color: white;
+
+}
+
+.cancel-button {
+
+    background: linear-gradient(to right bottom, rgb(235, 78, 30),rgb(233, 76, 37));
+    color: white;
+
+}
+
+.card-container {
+
+    width: calc(80% - 100px);
+    height: 300px;
+    margin-left: 10%;
+    padding: 50px;
+    background: transparent;
+    background: rgba(255, 255, 255, 0.2);
+
+}
